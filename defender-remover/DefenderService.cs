@@ -1,0 +1,1 @@
+// Moved to src/Logic/DefenderService.cs for the structured .NET project.

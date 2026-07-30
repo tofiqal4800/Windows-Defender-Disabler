@@ -1,0 +1,18 @@
+{
+  "defender": {
+    "version": "14",
+    "restorePointBeforeDisable": true,
+    "noRebootTemporaryDisable": true,
+    "services": ["WinDefend", "Sense", "WdNisSvc", "WdNisDrv"],
+    "registryKeys": {
+      "realtimeMonitoring": "SOFTWARE\\Microsoft\\Windows Defender\\Real-Time Protection",
+      "policy":             "SOFTWARE\\Policies\\Microsoft\\Windows Defender",
+      "features":           "SOFTWARE\\Microsoft\\Windows Defender\\Features"
+    }
+  },
+  "ui": {
+    "showRestorePointDialog": true,
+    "confirmBeforeDisable": true,
+    "showPowerShellExport": true
+  }
+}
